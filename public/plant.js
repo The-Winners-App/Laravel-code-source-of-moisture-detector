@@ -1,20 +1,25 @@
-// A utiliser plus tard dans le home.blade.php
+//Script pour faire a ce que des que un text se termine par un point le prochain commence a la ligne de la vu detail.blade.php
 
-/*<div class="inner">
-<div class="prototype_container">
-    <img src="" alt="photo arduino">
-    <!--<img src="{{ asset('$produits->image') }}" alt="image de {{ $produits->nom }}"> -->
-</div>
-<div class="name_prototype">
-    <!--{{ $produits->nom }}-->
-</div>
-<div class="prix">
-   <!-- Prix: {{ $produits->prix }} -->
-</div>
-<div class="about">
-   <!-- {{ $produits->about }} -->
-</div>
-<div class="btn">
-    <a href="#">En savoir plus</a>
-</div>
-</div>*/
+const text = document.querySelector('.details');
+const textContent = text.textContent;
+
+const newText = textContent.replace(/\./g,'.<br> <div style="margin-top: 3%;"></div>');
+
+text.innerHTML = newText;
+
+const texte = document.querySelector('.detail');
+const textContente = texte.textContent;
+
+const newTexte = textContente.replace(/\./g,'.<br> <div style="margin-top: 3%;"></div>');
+
+texte.innerHTML = newTexte;
+
+const textes = document.querySelector('.detai');
+const textContentes = textes.textContent;
+
+const newTextes = textContentes.replace(/\./g,'.<br> <div style="margin-top: 3%;"></div>');
+
+textes.innerHTML = newTextes;
+
+
+
